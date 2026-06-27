@@ -190,6 +190,14 @@
 
     setInterval(createHeart, 300);
 </script>
+<audio id="bgMusic" controls loop>
+    <source src="birthday-song.mp3" type="audio/mpeg">
+</audio>
 
+<script>
+window.onload = function () {
+    document.getElementById("bgMusic").play().catch(() => {});
+};
+</script>
 </body>
 </html>
